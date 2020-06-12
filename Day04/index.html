@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        header {
+            background-color: #FD4A4D;
+            color: white;
+        }
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+        }
+        .container2 {
+            width: 1200px;
+            margin: 0 auto;
+            
+        }
+        .title {
+            height: 50px;
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            align-items: center;
+        }
+        .nav {
+            height: 50px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            flex: 1;
+        }
+        .nav a {
+            margin-right: 10px;
+        }
+        .icon {
+            margin-right: 5px;
+            width: 20px;
+            height: 20px;
+        }
+        .tag {
+            border-bottom: 2px solid black;
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .frame {
+            display: inline-block;
+            padding: 5px;
+            background-color: #FCEEED;
+            margin: 5px;
+        }
+        .category {
+            margin: 20px 0;
+            text-align: center;
+        }
+        footer {
+            padding-top: 70px;
+            background-color: #7F0012;
+            color: white;
+        }
+        .left {
+            float: left;
+            width: 60%;
+        }
+        .right {
+            float: right;
+            margin-right: 50px;
+        }
+        .frame img {
+            width: 270px;
+            height: 377px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="title">
+                <img class="icon" src="data:image/png;base64,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" alt="">
+                <span>WBOWEN</span>
+            </div>
+            <nav class="nav">
+                <a href="#myMovies">喜欢的电影</a>
+                <a href="#myBooks">喜欢的书</a>
+                <a href="https://wangbowen.cn">关于我</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container2">
+        <div class="category">
+            <h2 id="myMovies" class="tag">喜欢的电影</h2>
+            <div>
+                <div class="frame">
+                    <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2570059839.jpg" alt="">
+                    <div>天气之子</div>
+                </div>
+                <div class="frame">
+                    <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2604517782.jpg" alt="">
+                    <div>春潮</div>
+                </div>
+                <div class="frame">
+                    <img src="https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2573561829.jpg" alt="">
+                    <div>温蒂</div>
+                </div>
+                <div class="frame">
+                    <img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2569450232.jpg" alt="">
+                    <div>黑水</div>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <h2 id="myBooks" class="tag">喜欢的书</h2>
+            <div>
+                <div class="frame">
+                    <img src="http://img3m1.ddimg.cn/3/0/25101651-1_b_3.jpg" alt="">
+                    <div>Hadoop权威指南</div>
+                </div>
+                <div class="frame">
+                    <img src="http://img3m3.ddimg.cn/11/12/25329953-1_b_1.jpg" alt="">
+                    <div>Spark SQL内核剖析</div>
+                </div>
+                <div class="frame">
+                    <img src="http://img3m8.ddimg.cn/9/11/27930978-1_b_3.jpg" alt="">
+                    <div>Hbase原理与实践</div>
+                </div>
+                <div class="frame">
+                    <img src="http://img3m3.ddimg.cn/53/9/26492453-1_b_4.jpg" alt="">
+                    <div>深入理解kafka</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container2">
+            <div style="height: 200px;">
+                <div class="left">
+                    不必太纠结于当下，也不必太忧虑未来，人生没有无用的经历，当你经历过一些事情后，眼前的风景已经和从前不一样了。    ——村上春树
+                </div>
+                <div class="right">
+                    <img style="width: 150px;" src="data:image/png;base64,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" alt="">
+                </div>
+            </div>
+            <div style="border-top: 1px solid black; height: 50px; line-height: 50px; text-align: center;">
+                版权所有&copy;WBOWEN
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
