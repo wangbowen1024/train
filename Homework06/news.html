@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo dark">凹凸世界</div>
+        <nav>
+            <a class="dark" href="./index.html">首页</a>
+            <a class="dark" href="./news.html">新闻</a>
+            <a class="dark" href="./about.html">关于我们</a>
+        </nav>
+        <div class="burger">
+            <div class="burger-line1 darkBur"> </div>
+            <div class="burger-line2 darkBur"></div>
+            <div class="burger-line3 darkBur"></div>
+        </div>
+    </header>
+    <!--中间内容-->
+    <div class="content-wrapper">
+        <section class="recent-news">
+            <h2 class="title">最近新闻</h2>
+            <p class="intro"></p>
+            <div id="news" class="news">
+                <!--
+                <div class="new">
+                    <img class="new-img" src="./images/jin.jpg" alt="">
+                    <a href="https://wangbowen.cn"><h3 class="new-title">金</h3></a>
+                    <p class="new-content">路痴，中二病，肢体语言丰富，偶尔有些逗比，无知无畏，敢爱敢恨。 外表看起来是一个开朗阳光的少年。 来自矿业星球登格鲁星，这个星球在神的旨意下承担着沉重的苦役和赋税。为了改变星球的命运，金的姐姐秋三年前参加了凹凸大赛，但从此未归。</p>
+                </div>
+                -->
+            </div>
+        </section>
+        <div>
+            <button class="page-button" onclick="cearchNews(1)">1</button>
+            <button class="page-button" onclick="cearchNews(2)">2</button>
+            <button class="page-button" onclick="cearchNews(3)">3</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-menus">
+          <div class="contact-us">
+            <p class="menu-title">联系我们</p>
+            <p>地址：福建省闽侯县闽江学院</p>
+            <p>电话：13212345678</p>
+            <p>传真：13212345678</p>
+            <p>电子邮箱：419444275@qq.com</p>
+          </div>
+          <p class="icp-info">闽ICP备XXXXXXXX号</p>
+          <p class="rights">
+            &copy; 2020 凹凸世界@WBOWEN 版权所有
+          </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/news.js"></script>
+    
+</body>
+</html>
